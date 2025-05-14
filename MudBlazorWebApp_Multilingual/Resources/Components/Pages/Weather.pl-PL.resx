@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Pogoda</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Prognoza pogody</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Ten komponent demonstruje pobieranie danych z serwera.</value>
+  </data>
+  <data name="SortBy" xml:space="preserve">
+    <value>Sortuj według</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="TempC" xml:space="preserve">
+    <value>Temp. (C)</value>
+  </data>
+  <data name="TempF" xml:space="preserve">
+    <value>Temp. (F)</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Podsumowanie</value>
+  </data>
+  <data name="Pager50" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="Pager100" xml:space="preserve">
+    <value>100</value>
+  </data>
+</root>

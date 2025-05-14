@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Instellingen</value>
+  </data>
+  <data name="LanguageSettingsHeader" xml:space="preserve">
+    <value>Taalinstellingen</value>
+  </data>
+  <data name="SelectLanguageLabel" xml:space="preserve">
+    <value>Selecteer taal:</value>
+  </data>
+  <data name="ApplyButton" xml:space="preserve">
+    <value>Toepassen</value>
+  </data>
+  <data name="CurrentPreferenceLabel" xml:space="preserve">
+    <value>Huidige voorkeur (uit localStorage):</value>
+  </data>
+  <data name="ActiveInterfaceCultureLabel" xml:space="preserve">
+    <value>Actieve interfacetaal:</value>
+  </data>
+  <data name="NotSet" xml:space="preserve">
+    <value>Niet ingesteld</value>
+  </data>
+</root>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome to the application!</value>
+  </data>
+  <data name="BuiltWith" xml:space="preserve">
+    <value>This application is built using the following technologies:</value>
+  </data>
+  <data name="Framework" xml:space="preserve">
+    <value>Framework:</value>
+  </data>
+  <data name="FrameworkValue" xml:space="preserve">
+    <value>.NET 9.0</value>
+  </data>
+  <data name="UiLibrary" xml:space="preserve">
+    <value>UI Library:</value>
+  </data>
+  <data name="UiLibraryValue" xml:space="preserve">
+    <value>MudBlazor version 8.*</value>
+  </data>
+  <data name="MultilingualHeader" xml:space="preserve">
+    <value>Multilingual Support</value>
+  </data>
+  <data name="MultilingualDesc" xml:space="preserve">
+    <value>This application supports multiple languages to provide a localized experience for users. Localization is implemented using .NET's built-in localization mechanisms and resource files (.resx).</value>
+  </data>
+  <data name="SupportedLanguages" xml:space="preserve">
+    <value>Supported Languages:</value>
+  </data>
+  <data name="LangEnglish" xml:space="preserve">
+    <value>English (United States)</value>
+  </data>
+  <data name="LangPolish" xml:space="preserve">
+    <value>Polish (Poland)</value>
+  </data>
+  <data name="LangDutch" xml:space="preserve">
+    <value>Dutch (Belgium)</value>
+  </data>
+  <data name="MudblazorDocs" xml:space="preserve">
+    <value>You can find MudBlazor documentation and examples on their website:</value>
+  </data>
+  <data name="MudblazorUrl" xml:space="preserve">
+    <value>www.mudblazor.com</value>
+  </data>
+</root>

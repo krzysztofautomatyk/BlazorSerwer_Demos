@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Błąd</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Błąd.</value>
+  </data>
+  <data name="SubHeader" xml:space="preserve">
+    <value>Wystąpił błąd podczas przetwarzania żądania.</value>
+  </data>
+  <data name="RequestId" xml:space="preserve">
+    <value>Identyfikator żądania:</value>
+  </data>
+  <data name="DevMode" xml:space="preserve">
+    <value>Tryb deweloperski</value>
+  </data>
+  <data name="DevModeInfo" xml:space="preserve">
+    <value>Przełączenie na środowisko <strong>Development</strong> wyświetli bardziej szczegółowe informacje o błędzie.</value>
+  </data>
+  <data name="DevModeWarning" xml:space="preserve">
+    <value>Środowisko Development nie powinno być włączone w aplikacjach produkcyjnych. Może to skutkować wyświetlaniem wrażliwych informacji użytkownikom. Do debugowania lokalnego ustaw zmienną środowiskową <strong>ASPNETCORE_ENVIRONMENT</strong> na <strong>Development</strong> i uruchom ponownie aplikację.</value>
+  </data>
+</root>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Fout</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Fout.</value>
+  </data>
+  <data name="SubHeader" xml:space="preserve">
+    <value>Er is een fout opgetreden bij het verwerken van uw verzoek.</value>
+  </data>
+  <data name="RequestId" xml:space="preserve">
+    <value>Verzoek-ID:</value>
+  </data>
+  <data name="DevMode" xml:space="preserve">
+    <value>Ontwikkelmodus</value>
+  </data>
+  <data name="DevModeInfo" xml:space="preserve">
+    <value>Overschakelen naar de <strong>Development</strong>-omgeving geeft meer gedetailleerde informatie over de fout die is opgetreden.</value>
+  </data>
+  <data name="DevModeWarning" xml:space="preserve">
+    <value>De Development-omgeving mag niet worden ingeschakeld voor gedeployde applicaties. Dit kan ertoe leiden dat gevoelige informatie uit uitzonderingen aan eindgebruikers wordt getoond. Voor lokale debugging, stel de omgevingsvariabele <strong>ASPNETCORE_ENVIRONMENT</strong> in op <strong>Development</strong> en start de app opnieuw.</value>
+  </data>
+</root>

@@ -1,12 +1,14 @@
 ﻿@page "/counter"
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Counter> Localizer
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>@Localizer["PageTitle"]</PageTitle>
 
-<MudText Typo="Typo.h3" GutterBottom="true">Counter</MudText>
+<MudText Typo="Typo.h3" GutterBottom="true">@Localizer["Header"]</MudText>
 
-<MudText Typo="Typo.body1" Class="mb-4">Current count: @currentCount</MudText>
+<MudText Typo="Typo.body1" Class="mb-4">@string.Format(Localizer["CurrentCount"], currentCount)</MudText>
 
-<MudButton Color="Color.Primary" Variant="Variant.Filled" @onclick="IncrementCount">Click me</MudButton>
+<MudButton Color="Color.Primary" Variant="Variant.Filled" @onclick="IncrementCount">@Localizer["ClickMe"]</MudButton>
 
 @code {
     private int currentCount = 0;

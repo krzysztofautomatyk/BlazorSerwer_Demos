@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="HomeLink" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="CounterLink" xml:space="preserve">
+    <value>Counter</value>
+  </data>
+  <data name="WeatherLink" xml:space="preserve">
+    <value>Weather</value>
+  </data>
+  <data name="SettingsLink" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+</root>

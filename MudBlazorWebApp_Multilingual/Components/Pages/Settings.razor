@@ -1,0 +1,94 @@
+@page "/settings"
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@inject MudBlazorWebApp_Multilingual.Service.CultureSettingsService CultureService
+@using System.Globalization
+@using Microsoft.AspNetCore.WebUtilities
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Settings> Localizer
+
+<MudText Typo="Typo.h3">@Localizer["PageTitle"]</MudText>
+
+<MudPaper Class="pa-4 mt-4">
+    <MudText Typo="Typo.h5">@Localizer["LanguageSettingsHeader"]</MudText>
+
+    <MudGrid Class="mt-4">
+        <MudItem xs="12" sm="6" md="4">
+            <MudSelect T="string" Label="@Localizer["SelectLanguageLabel"]" @bind-Value="SelectedCultureName" Variant="Variant.Outlined">
+                @foreach (var culture in CultureService.SupportedCultures)
+                {
+                    <MudSelectItem Value="@culture.Name">@culture.DisplayName</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="8" Class="d-flex align-center">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="ApplyLanguage" Class="ml-sm-3 mt-3 mt-sm-0">@Localizer["ApplyButton"]</MudButton>
+        </MudItem>
+    </MudGrid>
+
+    <MudText Class="mt-6">@Localizer["CurrentPreferenceLabel"] @GetCultureDisplayName(StoredCultureName)</MudText>
+    <MudText>@Localizer["ActiveInterfaceCultureLabel"] @CultureInfo.CurrentUICulture.DisplayName (@CultureInfo.CurrentUICulture.Name)</MudText>
+</MudPaper>
+
+@code {
+    private string SelectedCultureName { get; set; } = default!;
+    private string StoredCultureName { get; set; } = default!;
+    private bool _isInitialized = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var storedValue = await JSRuntime.InvokeAsync<string?>("localStorage.getItem", "preferredLanguage");
+            var defaultCulture = CultureService.SupportedCultures.FirstOrDefault()?.Name ?? "en-US";
+            StoredCultureName = storedValue ?? defaultCulture;
+
+            if (string.IsNullOrWhiteSpace(StoredCultureName) || StoredCultureName == "null" || !CultureService.SupportedCultures.Any(c => c.Name == StoredCultureName))
+            {
+                var currentUiCultureName = CultureInfo.CurrentUICulture.Name;
+                SelectedCultureName = CultureService.SupportedCultures.Any(c => c.Name == currentUiCultureName) ? currentUiCultureName : defaultCulture;
+
+                var uri = NavigationManager.ToAbsoluteUri(NavigationManager.Uri);
+                if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("culture", out var cultureFromQuery))
+                {
+                    if (!string.IsNullOrWhiteSpace(cultureFromQuery) && cultureFromQuery != "null" && CultureService.SupportedCultures.Any(c => c.Name == cultureFromQuery.ToString()))
+                    {
+                        SelectedCultureName = cultureFromQuery.ToString();
+                    }
+                }
+                StoredCultureName = SelectedCultureName; // Zapisz wybraną lub domyślną kulturę, jeśli nic nie było w localStorage
+            }
+            else
+            {
+                SelectedCultureName = StoredCultureName;
+            }
+            _isInitialized = true;
+            await InvokeAsync(StateHasChanged); // Użyj InvokeAsync dla StateHasChanged w OnAfterRenderAsync
+        }
+    }
+
+    private async Task ApplyLanguage()
+    {
+        if (!_isInitialized) return;
+
+        await JSRuntime.InvokeVoidAsync("localStorage.setItem", "preferredLanguage", SelectedCultureName);
+
+        var cookieValue = CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(SelectedCultureName));
+        await JSRuntime.InvokeVoidAsync("setCultureCookieAndReload", cookieValue);
+    }
+
+    private string GetCultureDisplayName(string cultureName)
+    {
+        if (string.IsNullOrEmpty(cultureName) || cultureName == "null") return Localizer["NotSet"];
+        try
+        {
+            var culture = new CultureInfo(cultureName);
+            return $"{culture.DisplayName} ({culture.Name})";
+        }
+        catch (CultureNotFoundException)
+        {
+            return Localizer["NotSet"];
+        }
+    }
+}

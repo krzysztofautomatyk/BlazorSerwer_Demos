@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Licznik</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Licznik</value>
+  </data>
+  <data name="CurrentCount" xml:space="preserve">
+    <value>Aktualna wartość: {0}</value>
+  </data>
+  <data name="ClickMe" xml:space="preserve">
+    <value>Kliknij mnie</value>
+  </data>
+</root>

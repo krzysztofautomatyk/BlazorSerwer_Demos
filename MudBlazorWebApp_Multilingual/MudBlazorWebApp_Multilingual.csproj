@@ -14,5 +14,6 @@
 
   <ItemGroup>
     <Folder Include="Doc\" />
+    <Folder Include="Resources\Components\Layout\" />
   </ItemGroup>
 </Project>

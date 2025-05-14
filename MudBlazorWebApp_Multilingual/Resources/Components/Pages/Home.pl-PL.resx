@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Strona główna</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Witamy w aplikacji!</value>
+  </data>
+  <data name="BuiltWith" xml:space="preserve">
+    <value>Aplikacja została zbudowana przy użyciu następujących technologii:</value>
+  </data>
+  <data name="Framework" xml:space="preserve">
+    <value>Framework:</value>
+  </data>
+  <data name="FrameworkValue" xml:space="preserve">
+    <value>.NET 9.0</value>
+  </data>
+  <data name="UiLibrary" xml:space="preserve">
+    <value>Biblioteka UI:</value>
+  </data>
+  <data name="UiLibraryValue" xml:space="preserve">
+    <value>MudBlazor wersja 8.*</value>
+  </data>
+  <data name="MultilingualHeader" xml:space="preserve">
+    <value>Obsługa wielu języków</value>
+  </data>
+  <data name="MultilingualDesc" xml:space="preserve">
+    <value>Aplikacja obsługuje wiele języków, aby zapewnić użytkownikom zlokalizowane doświadczenie. Lokalizacja jest realizowana przy użyciu mechanizmów .NET i plików zasobów (.resx).</value>
+  </data>
+  <data name="SupportedLanguages" xml:space="preserve">
+    <value>Obsługiwane języki:</value>
+  </data>
+  <data name="LangEnglish" xml:space="preserve">
+    <value>Angielski (Stany Zjednoczone)</value>
+  </data>
+  <data name="LangPolish" xml:space="preserve">
+    <value>Polski (Polska)</value>
+  </data>
+  <data name="LangDutch" xml:space="preserve">
+    <value>Holenderski (Belgia)</value>
+  </data>
+  <data name="MudblazorDocs" xml:space="preserve">
+    <value>Dokumentację i przykłady MudBlazor znajdziesz na stronie:</value>
+  </data>
+  <data name="MudblazorUrl" xml:space="preserve">
+    <value>www.mudblazor.com</value>
+  </data>
+</root>

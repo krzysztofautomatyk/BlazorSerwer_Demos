@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="LanguageSettingsHeader" xml:space="preserve">
+    <value>Ustawienia Języka</value>
+  </data>
+  <data name="SelectLanguageLabel" xml:space="preserve">
+    <value>Wybierz język:</value>
+  </data>
+  <data name="ApplyButton" xml:space="preserve">
+    <value>Zastosuj</value>
+  </data>
+  <data name="CurrentPreferenceLabel" xml:space="preserve">
+    <value>Aktualne ustawienie (z localStorage):</value>
+  </data>
+  <data name="ActiveInterfaceCultureLabel" xml:space="preserve">
+    <value>Aktywna kultura interfejsu:</value>
+  </data>
+  <data name="NotSet" xml:space="preserve">
+    <value>Nie ustawiono</value>
+  </data>
+</root>

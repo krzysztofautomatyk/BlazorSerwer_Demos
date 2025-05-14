@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Startpagina</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welkom bij de applicatie!</value>
+  </data>
+  <data name="BuiltWith" xml:space="preserve">
+    <value>Deze applicatie is gebouwd met de volgende technologieën:</value>
+  </data>
+  <data name="Framework" xml:space="preserve">
+    <value>Framework:</value>
+  </data>
+  <data name="FrameworkValue" xml:space="preserve">
+    <value>.NET 9.0</value>
+  </data>
+  <data name="UiLibrary" xml:space="preserve">
+    <value>UI-bibliotheek:</value>
+  </data>
+  <data name="UiLibraryValue" xml:space="preserve">
+    <value>MudBlazor versie 8.*</value>
+  </data>
+  <data name="MultilingualHeader" xml:space="preserve">
+    <value>Meertalige ondersteuning</value>
+  </data>
+  <data name="MultilingualDesc" xml:space="preserve">
+    <value>Deze applicatie ondersteunt meerdere talen om een gelokaliseerde ervaring te bieden. Lokalisatie is geïmplementeerd met behulp van de ingebouwde .NET-lokalisatiemechanismen en resourcebestanden (.resx).</value>
+  </data>
+  <data name="SupportedLanguages" xml:space="preserve">
+    <value>Ondersteunde talen:</value>
+  </data>
+  <data name="LangEnglish" xml:space="preserve">
+    <value>Engels (Verenigde Staten)</value>
+  </data>
+  <data name="LangPolish" xml:space="preserve">
+    <value>Pools (Polen)</value>
+  </data>
+  <data name="LangDutch" xml:space="preserve">
+    <value>Nederlands (België)</value>
+  </data>
+  <data name="MudblazorDocs" xml:space="preserve">
+    <value>Je vindt de MudBlazor-documentatie en voorbeelden op hun website:</value>
+  </data>
+  <data name="MudblazorUrl" xml:space="preserve">
+    <value>www.mudblazor.com</value>
+  </data>
+</root>
